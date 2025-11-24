@@ -5,7 +5,7 @@
            
 # COMPONENTS REQUIRED:
 
-## Hardware:
+## Hardware:.
 ARM LPC1343 / LPC1768
 LCD module
 ## Software:
