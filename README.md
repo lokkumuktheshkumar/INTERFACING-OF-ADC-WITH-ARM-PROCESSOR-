@@ -5,7 +5,7 @@
            
 # COMPONENTS REQUIRED:
 
-## Hardware:.
+## Hardware:
 ARM LPC1343 / LPC1768
 LCD module
 ## Software:
@@ -31,12 +31,27 @@ simple example.c, Uart Receiver interrupt.c, lcd.c, lcd.h
 <img width="923" height="443" alt="image" src="https://github.com/user-attachments/assets/c0045e52-162c-44b8-9d86-a119cc8b754d" />
 
  
- 
 # PROGRAM:
-
-
+```
+#include"lcd.h" 
+void ADCExp(); 
+int main(void) 
+{ 
+ReceiverInterrupt(); 
+init_lcd(); 
+lcd_putstring(LINE1, "RAANA ADC DEMO "); 
+ADCExp(); 
+while(1) 
+{ 
+} 
+}
+```
+# OUTPUT:
+<img width="887" height="602" alt="image" src="https://github.com/user-attachments/assets/fcff66ff-8e13-4e90-b479-41c84186e0ae" />
  
 # RESULTS
+Thus, the ADC is interfaced with ARM LPC 1768 microprocessor.
+
 
 
 
